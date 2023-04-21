@@ -25,7 +25,8 @@ def find_element_fromDOM_by(driver):
     '''获取多个元素，加s'''
     elements = driver.find_elements(By.NAME, "extensionId")
     for ele in elements:
-        print(ele.text)
+        # 不符合断言会报错AssertionError
+        assert ele.text == "Hello from JavaScript!"
 
 
 def find_element_fromElement_by(driver):
