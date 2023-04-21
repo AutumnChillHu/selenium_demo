@@ -65,7 +65,3 @@ def main():
             browser.back()
             # 关闭浏览器、退出驱动
             browser.quit()
-
-
-if __name__ == "__main__":
-    pass
