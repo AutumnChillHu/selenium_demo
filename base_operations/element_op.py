@@ -39,8 +39,12 @@ def element_operation(element):
     """元素常见操作"""
 
     element.click()
+    # 模拟输入
+    element.send_keys("需要输入的内容")
 
 
 def element_info(element):
-    # 获取元素name属性的值
+    # 获取元素属性，如name、id
     element.get_property("name")
+    # 元素本身的文字显示
+    print(element.text)
